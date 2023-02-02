@@ -1,0 +1,205 @@
+:root{
+    --primary-color:#1eacad;
+    --secondary-color:#f5b340;
+    --third-color:#01ad9d;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    color: var(--primary-color);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#title{
+    font-size: 3rem;
+    color:var(--secondary-color) ;
+    margin-top: 70px;
+}
+
+.billCounter{
+    padding: 50px;
+}
+
+.billCounterItems{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.billCounterItems #missingMessage{
+    margin: 20px 0;
+    color: red;
+}
+
+.calcTip p{
+    color: var(--secondary-color);
+}
+
+.calcTip input{
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    border: none;
+    background-color: lightgray;
+}
+
+.calcTip input::placeholder{
+    color: var(--third-color);
+    text-align: center;
+}
+
+.calcTip input:focus{
+    outline: none;
+}
+
+.calcTip .calcBillInput{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin: 3px 0 15px;
+    width: 100%;
+}
+
+.calcTip .calcBillInput span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    color: var(--third-color);
+}
+
+.selectTipBtns{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 10px;
+    margin: 7px 0 20px;
+}
+
+.selectTipBtns button{
+    background-color: var(--third-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selectTipBtns button:active{
+    transform: scale(0.98);
+}
+
+.selectTipBtns input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.selectTipBtns input::placeholder{
+    color: var(--third-color);
+    font-size: 0.9rem;
+}
+
+.numPeople{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin: 3px 0 15px;
+    width: 100%;
+}
+
+.numPeople i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: var(--third-color);
+}
+
+
+/* AMOUNTS PER PERSON */
+
+.perPerson{
+    background-color: var(--third-color);
+    padding: 20px;
+    position: relative;
+}
+
+.perPersonItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 50px;
+}
+
+.perPersonItem .perPersonText p{
+    color: #fff;
+}
+
+.perPersonItem .perPersonText small{
+    color: darkgray;
+}
+
+.perPersonItem .perPersonNum{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+
+.perPerson button{
+    background-color: var(--secondary-color);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 968px){
+    .billCounterItems{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
